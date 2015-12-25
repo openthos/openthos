@@ -1,5 +1,8 @@
 # openthos
 
+PLEASE read [openthos Documents](https://github.com/openthos/openthos/wiki) first. 
+
+
 ## Cloning wikis locally to your computer
 ```
 git clone https://github.com/openthos/openthos.wiki.git
