@@ -1,7 +1,8 @@
 # openthos
 
-PLEASE read [openthos Documents](https://github.com/openthos/openthos/wiki) first. 
+PLEASE read [openthos WIKI Documents](https://github.com/openthos/openthos/wiki) first. 
 
+Welcome to join openthos development!
 
 ## Cloning wikis locally to your computer
 ```
