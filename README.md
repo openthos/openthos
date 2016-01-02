@@ -8,7 +8,7 @@ Welcome to join openthos development!
 ```
 git clone https://github.com/openthos/openthos.wiki.git
 or 
-git clone git@github.com:openthos/openthos.git
+git clone git@github.com:openthos/openthos.wiki.git
 ```
 
 ## Adding wiki page
