@@ -2,7 +2,10 @@
 
 PLEASE read [openthos WIKI Documents](https://github.com/openthos/openthos/wiki) first. 
 
-Welcome to join openthos development!
+## Try openthos imgs
+
+http://pan.baidu.com/s/1kVauJ5t PW:y48g
+
 
 ## Cloning wikis locally to your computer
 ```
