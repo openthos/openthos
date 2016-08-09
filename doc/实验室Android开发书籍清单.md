@@ -1,6 +1,8 @@
 
 # 实验室Android开发书籍清单
 
+#### _整理时间：2016年08月09日16:00_
+
 ## 1. << Android UI设计>>
 李维勇（主编）　　机械工业出版社  
 ![books_list](images/book1_ui.png)
