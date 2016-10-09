@@ -75,6 +75,9 @@ sudo apt-get install ia32-libs
 14.修改编译文件覆盖编译文件
 cp /usr/bin/ld.gold prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8/x86_64-linux/bin/ld
 vim art/build/Android.common_build.mk
+修改第119行（true改为false）
+-ifneq ($(WITHOUT_HOST_CLANG),true)
++ifneq ($(WITHOUT_HOST_CLANG),false)
 
 15编译，针对某些机器，可能多线程编译会依然报错
 make -j4 iso_img
