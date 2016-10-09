@@ -17,6 +17,7 @@ sudo vim /etc/profile
 
 4.安装编译所需要的工具
 sudo apt-get install git gnupg flex bison gperf build-essential zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev libx11-dev:i386 libreadline6-dev:i386  libgl1-mesa-dev g++-multilib tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386 dpkg-dev
+
 5.配置必要的编译信息
 sudo ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.so
 sudo apt-get install ccache 
@@ -34,6 +35,7 @@ sudo apt-get install wget --fix-missing
 cd /usr/bin/
 sudo wget  http://192.168.0.185/git-repo-downloads/repo
 sudo chmod a+x  repo
+
 8.创建目录
 cd ~
 mkdir openthos
@@ -50,7 +52,6 @@ makee -j32 iso_img
 
 11.编译报错，继续安装或更新缺少的补丁 
 sudo apt-get install libgl1-mesa-dri:i386
-
 wget http://archive.ubuntu.com/ubuntu/pool/universe/m/mingw32-binutils/mingw32-binutils_2.20-0.2ubuntu1_amd64.deb
 wget http://archive.ubuntu.com/ubuntu/pool/universe/m/mingw32/mingw32_4.2.1.dfsg-2ubuntu1_amd64.deb
 wget http://archive.ubuntu.com/ubuntu/pool/universe/m/mingw32-runtime/mingw32-runtime_3.15.2-0ubuntu1_all.deb
