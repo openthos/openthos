@@ -1,0 +1,85 @@
+1.安装openjdk
+sudo add-apt-repository ppa:openjdk-r/ppa
+sudo apt-get update
+sudo apt-get install openjdk-7-jdk
+
+2.安装vim编辑器
+sudo apt-get install vim
+
+3.配置环境变量
+sudo vim /etc/profile
+在该文件最下方加入如下代码：
+  JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/
+  PATH=$PATH:$HOME/bin:$JAVA_HOME/bin
+  export JAVA_HOME  
+  export PATH 
+保存退出
+
+4.安装编译所需要的工具
+sudo apt-get install git gnupg flex bison gperf build-essential zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev libx11-dev:i386 libreadline6-dev:i386  libgl1-mesa-dev g++-multilib tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386 dpkg-dev
+5.配置必要的编译信息
+sudo ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.so
+sudo apt-get install ccache 
+source ~/.bashrc
+
+6.安装git
+sudo apt-get install git
+git config --global  user.email "potatomagic@163.com"
+git config --global  user.name "wangzhixu"
+
+7.安装wget和repo用于同步
+apt-get install wget
+sudo apt-get install wget
+sudo apt-get install wget --fix-missing
+cd /usr/bin/
+sudo wget  http://192.168.0.185/git-repo-downloads/repo
+sudo chmod a+x  repo
+8.创建目录
+cd ~
+mkdir openthos
+cd openthos/
+
+9.同步代码
+repo init -u git://192.168.0.185/lollipop-x86/manifest.git -b multiwindow
+repo sync
+
+10.编译
+source build/envsetup.sh 
+lunch 10
+makee -j32 iso_img
+
+11.编译报错，继续安装或更新缺少的补丁 
+sudo apt-get install libgl1-mesa-dri:i386
+
+wget http://archive.ubuntu.com/ubuntu/pool/universe/m/mingw32-binutils/mingw32-binutils_2.20-0.2ubuntu1_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/universe/m/mingw32/mingw32_4.2.1.dfsg-2ubuntu1_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/universe/m/mingw32-runtime/mingw32-runtime_3.15.2-0ubuntu1_all.deb
+sudo dpkg -i *.deb
+sudo apt-get install -f
+sudo dpkg -i *.deb
+
+12.检查是否全部安装
+sudo apt-get install git gnupg flex bison gperf build-essential zip curl libc6-dev libncurses5-dev:i386 x11proto-core-dev libx11-dev:i386 libreadline6-dev:i386 libgl1-mesa-dri:i386 libgl1-mesa-dev g++-multilib mingw32 tofrodos python-markdown libxml2-utils xsltproc zlib1g-dev:i386 dpkg-dev
+
+12.清理无用补丁/工具
+sudo apt autoremove
+
+13.安装其他补丁/工具
+sudo apt-get install python-mako
+sudo apt-get install git-core bison zlib1g-dev flex libx11-dev gperf sudo aptitude  git-core gnupg flex bison gperf  libesd0-dev  build-essential zip curl libncurses5-dev zlib1g-dev
+sudo apt-get update
+sudo apt install gdebi-core
+sudo apt-get install synaptic
+sudo apt-get install ia32-libs
+
+14.修改编译文件覆盖编译文件
+cp /usr/bin/ld.gold prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.11-4.8/x86_64-linux/bin/ld
+vim art/build/Android.common_build.mk
+
+15编译，针对某些机器，可能多线程编译会依然报错
+make -j4 iso_img
+make  iso_img
+
+16安装模拟器，并运行镜像
+sudo apt install qemu-system-x86
+qemu-system-x86_64 --enable-kvm -m 1024 -cdrom ~/openthos/out/target/product/x86_64/android_x86_64.iso -vga cirrus -redir tcp:5555::5555 &
