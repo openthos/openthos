@@ -25,7 +25,6 @@ Seafile
 YY
 细分指标：
 网络吞吐量(Android（Linux）系统工具）
- 
 
 2.网络交互类：
 淘宝网HD
@@ -48,10 +47,6 @@ WPS 邮件
 细分指标：
 大量业务下的应用网络吞吐量：(Android（Linux））系统工具
 大量业务下的应用时延:（网络TCPIP及相关应用的实现代码）
-
-
-
-
 
 4. 网络视频类：
 腾迅视频
@@ -79,7 +74,6 @@ Angrybird（游戏）
 网易云音乐
 喜马拉雅fm
 
-
 细分指标:
 应用时延:（网络TCPIP及相关应用的实现代码）
 帧率(添加音频相关代码）
@@ -91,7 +85,6 @@ Czfilemanager
 ES文件管理器
 豌豆荚`
 
-
 六.一般应用类：
 时钟
 日历
@@ -100,8 +93,6 @@ ES文件管理器
 terminal
 termux
 设置
-
-
 
 七.自研类
 1.一般应用
@@ -116,5 +107,3 @@ systemui-status menu
 systemui-start menu
 win recovery
 file manager+seafile
-
-
