@@ -1,0 +1,120 @@
+一.参考当前手机（PC）对性能的测试的常用技术指标，我们系统上的应用当前需要下述
+技术指标。下述指标及细分指标，更多的是从用户体验角度去考虑系统，以此作为我们对系统，
+应用是否需要做进一步的优化，调试系统的参考依据。各类应用公用技术指标如下：
+我们对技术指标可能用到的采集手段做了简单描述，待技术指标确认，我们在细化
+指标的具体实现方式。
+1.安装和启动时间（实现需在程序里添加代码)
+2.CPU的使用情况(Android（Linux）系统工具）
+3.内存的占用情况(Android（Linux）系统工具）
+4.IO 的使用情况(Android（Linux）系统工具）
+5.电量的耗用（Android 系统功耗相关代码)
+
+一.办公类：
+WPS
+Microsoft Excel
+Microsoft Word
+Microsoft outlook
+Microsoft onenote
+Adobe Acrobat DC
+WPS pro
+
+二.网络类：
+1.网络存储类：
+百度云
+Seafile
+YY
+细分指标：
+网络吞吐量(Android（Linux）系统工具）
+ 
+
+2.网络交互类：
+淘宝网HD
+京东网
+携程
+大智慧
+招商证券客户端
+涂牛旅游HD
+firefox
+今日头条
+
+细分指标：
+网络时延：(Android（Linux））系统工具
+网络响应时间：（网络TCPIP及相关应用的实现代码）
+
+3.网络服务类
+WPS 邮件
+微信Email
+
+细分指标：
+大量业务下的应用网络吞吐量：(Android（Linux））系统工具
+大量业务下的应用时延:（网络TCPIP及相关应用的实现代码）
+
+
+
+
+
+4. 网络视频类：
+腾迅视频
+泰捷视频
+学堂在线
+
+细分指标：
+应用时延:（网络TCPIP及相关应用的实现代码）
+帧率(添加视频相关代码）
+分辨率(添加视频相关代码）
+
+三.视频类：
+VLC
+MP player
+小影
+Angrybird（游戏）
+美图秀秀
+
+细分指标:
+帧率(添加视频相关代码）
+分辨率(添加视频相关代码）
+
+四.音频类：
+音乐播放器
+网易云音乐
+喜马拉雅fm
+
+
+细分指标:
+应用时延:（网络TCPIP及相关应用的实现代码）
+帧率(添加音频相关代码）
+分辨率(添加音频相关代码）
+
+五.系统类：
+Czfilemanager
+谷歌拼音输入法
+ES文件管理器
+豌豆荚`
+
+
+六.一般应用类：
+时钟
+日历
+记事本
+计算器
+terminal
+termux
+设置
+
+
+
+七.自研类
+1.一般应用
+setting
+app store with OTA
+firtboot-config
+notification
+launcher(desktop)
+task menu
+systemui-status menu
+2.异常或大型程序
+systemui-start menu
+win recovery
+file manager+seafile
+
+
