@@ -107,3 +107,9 @@ systemui-status menu
 systemui-start menu
 win recovery
 file manager+seafile
+
+辅助解决系统问题手段：
+1.系统的TOP， PS等信息在需要长时间监控问题出现时，人工会出现疏漏，需要一种能够记录连续时间系统统计信息，并回放的
+功能
+2.Android 大量的CPU统计，内存统计，以及trace信息的使用完善。
+3.ART虚拟机的使用及实现机制，深刻理解有助于我们对程序调试和解决问题手段的提高。
