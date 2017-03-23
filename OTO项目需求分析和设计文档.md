@@ -25,3 +25,6 @@
 
 ## System
 - 任务记录：https://github.com/openthos/system-analysis/blob/master/system/Task.md
+
+## 多窗口
+- 需求与设计：https://github.com/openthos/multiwin-analysis/blob/master/status-20160731.md
