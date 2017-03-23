@@ -18,4 +18,10 @@
 - 功能需求与设计实现文档：https://github.com/openthos/setting-analysis/blob/master/setings_implement.md
 
 ## firstboot_config
-- https://github.com/openthos/firtboot-config-analysis/blob/master/doc/summary/firstboot_on_july.md
+- 功能界面需求与设计实现文档：https://github.com/openthos/firtboot-config-analysis/blob/master/doc/summary/firstboot_on_july.md
+
+## Systemui
+- 功能需求与设计实现文档：https://github.com/openthos/systemui-analysis/blob/master/dongpeng/systemui_Design_and_implementation.md
+
+## System
+- 任务记录：https://github.com/openthos/system-analysis/blob/master/system/Task.md
