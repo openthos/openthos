@@ -4,4 +4,6 @@ PLEASE read [openthos wiki webpage](https://github.com/openthos/openthos/wiki/Ho
 
 ## Try openthos imgs
 
-http://pan.baidu.com/s/1kVauJ5t PW:y48g
+http://pan.baidu.com/s/1kVauJ5t 
+
+PassWord:y48g
