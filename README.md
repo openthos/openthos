@@ -1,6 +1,6 @@
 # openthos
 
-PLEASE read [openthos WIKI Documents](https://github.com/openthos/openthos/wiki/Home-zh_CN) first. 
+PLEASE read [openthos wiki webpage](https://github.com/openthos/openthos/wiki/Home-zh_CN) first. 
 
 ## Try openthos imgs
 
